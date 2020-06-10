@@ -1,3 +1,9 @@
+# This fork
+
+This fork is just an outside attempt to clean up and update OLA-TS.js with the newer demo code found on echo66's github.io.
+
+
+
 # OLA-TS.js
 
 OLA-TS.js is an audio time stretching implementation of a modified Overlap and Add (OLA) algorithm.
