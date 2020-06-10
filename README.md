@@ -2,16 +2,34 @@
 
 This fork is just an outside attempt to clean up and update OLA-TS.js with the newer demo code found on echo66's github.io.
 
-
-
 # OLA-TS.js
 
 OLA-TS.js is an audio time stretching implementation of a modified Overlap and Add (OLA) algorithm.
 Demo: http://echo66.github.io/demos/OLA-TS.js/
 
+## Quick start
+
+
+```
+
+import { OLATSPlayer } from "ola-ts"
+
+// Set up your audioContext after a user interaction, retrieve & decode audio data, pass it in
+
+var player = new OLATSPlayer(audioContext, decodedAudioData, 4096, 4096);
+player.connect(gain);
+var gain = audioContext.createGain();
+gain.connect(audioContext.destination);
+player.speed = 2; // Speeds are reversed from playbackRate. Big num = slow play
+
+
+```
+
 # Constructor
 
 *OLATS(Number frameSize)*: frameSize must be an integer. The default window type is the Lanczos.
+
+
 
 # API
 
@@ -53,7 +71,3 @@ Demo: http://echo66.github.io/demos/OLA-TS.js/
 
 * This time stretcher is recommended for applications that need a cheap solution for time stretching while maintaining good quality for harmonic structures and do not require very fast manipulation of the time stretch factor.
 
-
-# Roadmap
-
-* Formal analysis of the algorithm.
