@@ -64,7 +64,7 @@ var add_player = function(title, decodedData) {
     
   var id = playersIdCounter++;
   var player = new OLATSPlayer(window.context, decodedData, FRAME_SIZE, BUFFER_SIZE);
-  var gain = windowcontext.createGain();
+  var gain = window.context.createGain();
 
   var ui = new OLATSPlayerUI(id, title, player, gain);
   ui.removeCallback = function() {

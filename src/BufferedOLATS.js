@@ -11,7 +11,9 @@
 import OLATS from "./OLATS.js"
 import CBuffer from 'CBuffer';
 
-	var _frameSize = frameSize || 4096;
+export function BufferedOLATS(frameSize) {
+
+    var _frameSize = frameSize || 4096;
 	var _olaL = new OLATS(_frameSize);
 	var _olaR = new OLATS(_frameSize);
 	var _buffer;

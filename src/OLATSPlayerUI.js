@@ -133,7 +133,6 @@ export function OLATSPlayerUI(id, title, player, gain, recorder) {
     _playerDiv.appendChild(_playButton);
     _playerDiv.appendChild(_stopButton);
     _playerDiv.appendChild(_closeButton);
-    _playerDiv.appendChild(_recordButton);
 
     document.body.appendChild(_playerDiv);
 
