@@ -7,7 +7,8 @@
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
-    "watch": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+    "watch": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
