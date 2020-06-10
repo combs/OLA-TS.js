@@ -5,7 +5,7 @@ import { OLATSPlayerUI } from "../src/OLATSPlayerUI.js"
 var BUFFER_SIZE = 4096;
 var FRAME_SIZE  = 4096;
 
-var players = [];
+window.players = [];
 var playersIdCounter = 0;
 
 
