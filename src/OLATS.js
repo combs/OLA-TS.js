@@ -1,4 +1,9 @@
-function OLATS(frameSize, windowType) {
+import CBuffer from 'CBuffer';
+
+var OLATSPlayer = require("./OLATSPlayer.js");
+
+
+export function OLATS(frameSize, windowType) {
 
   this.process = function(frame, outputArray) {
 
@@ -270,3 +275,5 @@ function OLATS(frameSize, windowType) {
   this.is_clean = function() { return _clean; }
 
 }
+
+export default [OLATS,OLATSPlayer];

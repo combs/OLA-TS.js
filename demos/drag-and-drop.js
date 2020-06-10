@@ -1,4 +1,4 @@
-function DragAndDrop(domElement) {
+export function DragAndDrop(domElement) {
 
     var _toggleActive = function (e, toggle) {
         e.stopPropagation();
@@ -50,3 +50,5 @@ function DragAndDrop(domElement) {
     })
 
 }
+
+export default [DragAndDrop];

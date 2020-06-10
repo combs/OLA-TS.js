@@ -1,0 +1,57 @@
+{
+  "name": "ola-ts",
+  "version": "1.0.0",
+  "description": "Audio time stretching implementation of a modified Overlap and Add (OLA) algorithm",
+  "main": "src/OLATS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
+    "watch": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/combs/OLA-TS.js.git"
+  },
+  "keywords": [
+    "audio",
+    "time-stretching"
+  ],
+  "author": "echo66 and combs",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/combs/OLA-TS.js/issues"
+  },
+  "homepage": "https://github.com/combs/OLA-TS.js#readme",
+  "dependencies": {
+    "CBuffer": "^2.1.0",
+    "core-js": "^3.6.5",
+    "domready": "^1.0.8",
+    "install": "^0.13.0",
+    "npm": "^6.14.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.2",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
+    "file-loader": "^5.1.0",
+    "html-webpack-plugin": "^4.0.0-beta.11",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "worklet-loader": "^1.0.0"
+  }
+}

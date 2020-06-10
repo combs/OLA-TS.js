@@ -1,4 +1,4 @@
-function OLATSPlayerUI(id, title, player, gain, recorder) {
+export function OLATSPlayerUI(id, title, player, gain, recorder) {
 
 	/*
      *	COMPONENTES: 
@@ -169,3 +169,5 @@ function OLATSPlayerUI(id, title, player, gain, recorder) {
 
 
 }
+
+export default [ OLATSPlayerUI];

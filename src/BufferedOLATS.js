@@ -7,7 +7,8 @@
  *  or both parameters, call the "process" method.
  *  
  */
-function BufferedOLATS(frameSize) {
+
+export function BufferedOLATS(frameSize) {
 
 	var _frameSize = frameSize || 4096;
 	var _olaL = new OLATS(_frameSize);
@@ -102,3 +103,4 @@ function BufferedOLATS(frameSize) {
 		}
 	});
 }
+export default [ BufferedOLATS ];

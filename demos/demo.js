@@ -1,9 +1,13 @@
+import { DragAndDrop } from "./drag-and-drop.js"
+import { OLATSPlayer } from "../src/OLATSPlayer.js"
+import { OLATSPlayerUI } from "../src/OLATSPlayerUI.js"
 
 var BUFFER_SIZE = 4096;
 var FRAME_SIZE  = 4096;
 
 var players = [];
 var playersIdCounter = 0;
+
 
 var load_remote_audio = function(url) {
   if (!window.context) { 
@@ -81,9 +85,6 @@ var add_player = function(title, decodedData) {
 var dd = new DragAndDrop(document.getElementById('drag-and-drop'));
 dd.on('drop', load_local_audio);
 
-
-
-// load_remote_audio('../OLA-TS.js/14. Too Long.mp3');
 
 var remoteURLs = [
   {

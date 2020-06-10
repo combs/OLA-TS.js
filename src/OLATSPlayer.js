@@ -1,10 +1,12 @@
-function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
+import BufferedOLATS from "./BufferedOLATS.js";
+
+export function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
 
   var _audioCtx = audioContext;
 
   var _node = audioContext.createScriptProcessor(bufferSize, 2);
   
-  var _pv = new BufferedOLA(frameSize);
+  var _pv = new BufferedOLATS(frameSize);
 
   var _audioBuffer = audioBuffer;
 
@@ -82,3 +84,5 @@ function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
     }
   })
 }
+
+export default [OLATSPlayer];
