@@ -39,6 +39,7 @@ var load_local_audio = function(e) {
           });
           reader.addEventListener('load', function (e) {
               context.decodeAudioData(e.target.result, function(decodedData) {
+                console.log("audio decoded, loading player.")
                 add_player(filename, decodedData);
               });
           });
@@ -62,8 +63,8 @@ var add_player = function(title, decodedData) {
   }
     
   var id = playersIdCounter++;
-  var player = new OLATSPlayer(context, decodedData, FRAME_SIZE, BUFFER_SIZE);
-  var gain = context.createGain();
+  var player = new OLATSPlayer(window.context, decodedData, FRAME_SIZE, BUFFER_SIZE);
+  var gain = windowcontext.createGain();
 
   var ui = new OLATSPlayerUI(id, title, player, gain);
   ui.removeCallback = function() {
@@ -79,7 +80,7 @@ var add_player = function(title, decodedData) {
   };
 
   player.connect(gain);
-  gain.connect(context.destination);
+  gain.connect(window.context.destination);
 }
 
 var dd = new DragAndDrop(document.getElementById('drag-and-drop'));

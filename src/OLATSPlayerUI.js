@@ -106,28 +106,6 @@ export function OLATSPlayerUI(id, title, player, gain, recorder) {
     }
     /***********************************************/
 
-    /*************** RECORD BUTTON *****************/
-    var _recordButton = document.createElement('button');
-    var _isRecording = false;
-    _recordButton.innerHTML = "Start Recording";
-    _recordButton.onclick = function() {
-        if (_isRecording) {
-            _recordButton.innerHTML = "Start Recording";
-            _isRecording = false;
-            recorder.stop();
-            recorder.exportWAV(function(blob) {
-                var url = URL.createObjectURL(blob);
-                // window.open(url);
-                Recorder.forceDownload(blob, new Date().toISOString() + '.wav');
-            });
-        } else {
-            _recordButton.innerHTML = "Stop Recording";
-            _isRecording = true;
-            recorder.record();
-        }
-    }
-    /***********************************************/
-
 
     /****************** WAVEFORM *******************/
     
