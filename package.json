@@ -1,6 +1,6 @@
 {
   "name": "ola-ts",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Audio time stretching implementation of a modified Overlap and Add (OLA) algorithm",
   "main": "src/OLATS.js",
   "scripts": {
