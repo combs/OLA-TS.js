@@ -19,7 +19,6 @@ export function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
   var _canPlay = false;
 
 
-
   _node.onaudioprocess = function(e) {
     if (_canPlay) {
       if (_newAlpha != undefined) {
@@ -62,6 +61,11 @@ export function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
       }, 
       set : function(newPosition) {
         _newPosition = newPosition;
+      }
+    },
+    'playing' : {
+      get : function() {
+        return _canPlay;
       }
     },
     'speed' : {
