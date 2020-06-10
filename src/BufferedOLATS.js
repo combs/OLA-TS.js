@@ -9,7 +9,7 @@
  */
 
 import OLATS from "./OLATS.js"
-import CBuffer from 'CBuffer';
+import CBuffer from './cbuffer.js';
 
 export function BufferedOLATS(frameSize) {
 

@@ -1,4 +1,4 @@
-import CBuffer from 'CBuffer';
+import CBuffer from './cbuffer.js';
 
 import OLATSPlayer from "./OLATSPlayer.js";
 export { OLATSPlayer } ;
