@@ -14,7 +14,7 @@ import CBuffer from './cbuffer.js';
 export function BufferedOLATS(frameSize, windowType) {
 
     var _frameSize = frameSize || 4096;
-    var _windowType = windowtype || 'Lanczos';
+    var _windowType = windowType || 'Lanczos';
 	var _olaL = new OLATS(_frameSize, _windowType);
 	var _olaR = new OLATS(_frameSize, _windowType);
 	var _buffer;
