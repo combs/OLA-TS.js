@@ -1,5 +1,5 @@
 import { DragAndDrop } from "./drag-and-drop.js"
-import { OLATSPlayer } from "../src/OLATSPlayer.js"
+import { OLATSPlayer } from "../src/OLATS.js"
 import { OLATSPlayerUI } from "../src/OLATSPlayerUI.js"
 
 var BUFFER_SIZE = 4096;

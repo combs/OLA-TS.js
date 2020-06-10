@@ -85,4 +85,4 @@ export function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
   })
 }
 
-export default [OLATSPlayer];
+export default OLATSPlayer ;

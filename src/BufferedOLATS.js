@@ -8,7 +8,8 @@
  *  
  */
 
-export function BufferedOLATS(frameSize) {
+import OLATS from "./OLATS.js"
+import CBuffer from 'CBuffer';
 
 	var _frameSize = frameSize || 4096;
 	var _olaL = new OLATS(_frameSize);
@@ -103,4 +104,5 @@ export function BufferedOLATS(frameSize) {
 		}
 	});
 }
-export default [ BufferedOLATS ];
+
+export default BufferedOLATS;

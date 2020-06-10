@@ -51,4 +51,4 @@ export function DragAndDrop(domElement) {
 
 }
 
-export default [DragAndDrop];
+export default DragAndDrop;

@@ -1,6 +1,7 @@
 import CBuffer from 'CBuffer';
 
-var OLATSPlayer = require("./OLATSPlayer.js");
+import OLATSPlayer from "./OLATSPlayer.js";
+export { OLATSPlayer } ;
 
 
 export function OLATS(frameSize, windowType) {
@@ -276,4 +277,4 @@ export function OLATS(frameSize, windowType) {
 
 }
 
-export default [OLATS,OLATSPlayer];
+export default OLATS;

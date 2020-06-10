@@ -170,4 +170,4 @@ export function OLATSPlayerUI(id, title, player, gain, recorder) {
 
 }
 
-export default [ OLATSPlayerUI];
+export default OLATSPlayerUI;
