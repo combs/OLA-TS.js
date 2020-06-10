@@ -58,10 +58,10 @@ var add_player = function(title, decodedData) {
   }
     
   var id = playersIdCounter++;
-  var player = new OLAPlayer(context, decodedData, FRAME_SIZE, BUFFER_SIZE);
+  var player = new OLATSPlayer(context, decodedData, FRAME_SIZE, BUFFER_SIZE);
   var gain = context.createGain();
 
-  var ui = new OLAPlayerUI(id, title, player, gain);
+  var ui = new OLATSPlayerUI(id, title, player, gain);
   ui.removeCallback = function() {
     player.disconnect();
     gain.disconnect();

@@ -1,4 +1,4 @@
-function OLAPlayerUI(id, title, player, gain, recorder) {
+function OLATSPlayerUI(id, title, player, gain, recorder) {
 
 	/*
      *	COMPONENTES: 

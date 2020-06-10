@@ -1,4 +1,4 @@
-function OLAPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
+function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
 
   var _audioCtx = audioContext;
 

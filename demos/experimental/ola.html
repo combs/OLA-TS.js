@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <script type="text/javascript" src="OLA.js"></script>
+    <script type="text/javascript" src="../OLA.js"></script>
     <script type="text/javascript">
 
       var context = new AudioContext();
@@ -69,13 +69,7 @@
           request.send();
       };
 
-      // loadSample('http://localhost/soundtouchjs/1.mp3');
-      // loadSample('http://localhost/soundtouchjs/4.mp3');
-      // loadSample('http://localhost/soundtouchjs/7.mp3');
-      loadSample('http://localhost/soundtouchjs/8.mp3');
-      // loadSample('http://localhost/soundtouchjs/8.mp3');
-      // loadSample('http://localhost/annotator/Daft%20Punk%20-%20Discography%20-%201994-2013/01%20-%20Albums%20(CD%20Original)/2001%20-%20Discovery%20-%20(320%20kbps)/14.%20Too%20Long.mp3');
-
+      loadSample('8.mp3');
       function set_beta(newBeta) {
         olaL.set_beta(newBeta);
         olaR.set_beta(newBeta);
