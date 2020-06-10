@@ -1,14 +1,13 @@
-# This fork
-
-This fork is just an outside attempt to clean up and update OLA-TS.js with the newer demo code found on echo66's github.io.
 
 # OLA-TS.js
 
 OLA-TS.js is an audio time stretching implementation of a modified Overlap and Add (OLA) algorithm.
-Demo: http://echo66.github.io/demos/OLA-TS.js/
 
-## Quick start
+## This fork
 
+This fork is an outside attempt to clean up and update the abandoned OLA-TS.js.
+
+# Quick start
 
 ```
 
@@ -21,7 +20,7 @@ player.connect(gain);
 var gain = audioContext.createGain();
 gain.connect(audioContext.destination);
 player.speed = 2; // Speeds are reversed from playbackRate. Big num = slow play
-
+player.play();
 
 ```
 
