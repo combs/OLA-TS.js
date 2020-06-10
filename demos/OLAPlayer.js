@@ -1,4 +1,4 @@
-function WAAPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
+function OLAPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
 
   var _audioCtx = audioContext;
 

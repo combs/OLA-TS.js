@@ -1,4 +1,4 @@
-function WAAPlayerUI(id, title, player, gain, recorder) {
+function OLAPlayerUI(id, title, player, gain, recorder) {
 
 	/*
      *	COMPONENTES: 
