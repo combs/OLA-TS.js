@@ -71,26 +71,7 @@ function OLATS(frameSize, windowType) {
       return alpha + 2.2;
     }
   }
-
-  this.get_alpha_step = function(alpha) {
-    if (alpha < 0.9) {
-		
-    } else if (alpha < 1) {
-      
-    } else if (alpha >= 1 && alpha < 1.25) {
-      
-    } else if (alpha >= 1.25 && alpha < 1.5) {
-      
-    } else if (alpha >= 1.5 && alpha < 1.8) {
-      
-    } else if (alpha >= 1.8 && alpha < 2) {
-      
-    } else if (alpha >= 2 && alpha < 2.5) {
-      
-    } else {
-      
-    }
-  }
+ 
 
   /*
    * --------------
