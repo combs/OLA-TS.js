@@ -264,11 +264,9 @@ export function OLATS(frameSize, windowType) {
   this.set_beta(_beta);
 
   var _overlapBuffers = new CBuffer(_frameSize);
-  var _owOverlapBuffers = new CBuffer(_frameSize);
-  for (var i=0; i<_frameSize; i++) {
-    _overlapBuffers.push(0);
-    _owOverlapBuffers.push(0);
-  }
+  var _owOverlapBuffers = new CBuffer(_frameSize); 
+  _overlapBuffers.fill(0);
+  _owOverlapBuffers.fill(0);
 
 
   var _clean = true;
