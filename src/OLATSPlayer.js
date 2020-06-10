@@ -1,12 +1,14 @@
 import BufferedOLATS from "./BufferedOLATS.js";
 
-export function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize) {
+export function OLATSPlayer(audioContext, audioBuffer, frameSize, bufferSize, windowType) {
 
   var _audioCtx = audioContext;
 
   var _node = audioContext.createScriptProcessor(bufferSize, 2);
   
-  var _pv = new BufferedOLATS(frameSize);
+  var _windowType = windowType || 'Lanczos';
+  
+  var _pv = new BufferedOLATS(frameSize, _windowType);
 
   var _audioBuffer = audioBuffer;
 

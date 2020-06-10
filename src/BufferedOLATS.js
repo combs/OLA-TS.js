@@ -11,11 +11,12 @@
 import OLATS from "./OLATS.js"
 import CBuffer from './cbuffer.js';
 
-export function BufferedOLATS(frameSize) {
+export function BufferedOLATS(frameSize, windowType) {
 
     var _frameSize = frameSize || 4096;
-	var _olaL = new OLATS(_frameSize);
-	var _olaR = new OLATS(_frameSize);
+    var _windowType = windowtype || 'Lanczos';
+	var _olaL = new OLATS(_frameSize, _windowType);
+	var _olaR = new OLATS(_frameSize, _windowType);
 	var _buffer;
 	var _position = 0;
 	var _newAlpha = 1;

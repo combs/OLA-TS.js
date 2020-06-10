@@ -167,9 +167,9 @@ export function OLATS(frameSize, windowType) {
   function create_window(length, beta, type) {
 
     var win = new Float32Array(length);
-
+    var func = WindowFunctions[type];
     for (var i=0; i<length; i++) {
-      win[i] = WindowFunctions[type](length, i, beta);
+      win[i] = func(length, i, beta);
     }
 
     return win;
@@ -254,7 +254,7 @@ export function OLATS(frameSize, windowType) {
   var _alpha, _Ha, _Hs;
   var _beta = 1;
   var _overlapFactor = 1.1;
-  var _windowType = "Lanczos";
+  var _windowType = windowType || "Lanczos";
   var _window;
   var _squaredFramingWindow;
   var _numSamples = 0;
